@@ -1,5 +1,59 @@
+@font-face {
+        font-family: 'poppins-extralight';
+        src: url('/flask-app/app/static/font/poppins/poppins-extralight-webfont.woff2') format('woff2'),
+            url('/flask-app/app/static/font/poppins/poppins-extralight-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+
+}
+
+@font-face {
+        font-family: 'poppins-light';
+        src: url('/flask-app/app/static/font/poppins/poppins-light-webfont.woff2') format('woff2'),
+            url('/flask-app/app/static/font/poppins/poppins-light-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+
+}
+
+@font-face {
+        font-family: 'poppins-medium';
+        src: url('/flask-app/app/static/font/poppins/poppins-medium-webfont.woff2') format('woff2'),
+            url('/flask-app/app/static/font/poppins/poppins-medium-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+
+}
+
+@font-face {
+        font-family: 'poppins-regular';
+        src: url('/flask-app/app/static/font/poppins/poppins-regular-webfont.woff2') format('woff2'),
+            url('/flask-app/app/static/font/poppins/poppins-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+
+}
+
+@font-face {
+        font-family: 'poppins-semibold';
+        src: url('/flask-app/app/static/font/poppins/poppins-semibold-webfont.woff2') format('woff2'),
+            url('/flask-app/app/static/font/poppins/poppins-semibold-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+
+}
+
+@font-face {
+        font-family: 'poppins-bold';
+        src: url('/flask-app/app/static/font/poppins/poppins-bold-webfont.woff2') format('woff2'),
+            url('/flask-app/app/static/font/poppins/poppins-bold-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: poppins-regular, Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;

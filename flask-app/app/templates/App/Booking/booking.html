@@ -2,12 +2,36 @@
 {% block main %}
 <body>
 
-    <div class="make-booking">
-        <h1 class="booking-title">Make a Booking</h1>
-        <div class="booking-desc">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sint vel, dignissimos vitae ratione porro inventore id suscipit amet iusto praesentium quia soluta magni ipsum explicabo reprehenderit ex cumque voluptatibus.</p>
+    <div class="booking">
+
+        <div class="booking-content">
+            <h1 class="booking-title">Make a Booking</h1>
+            <div class="booking-desc">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sint vel, dignissimos vitae ratione porro inventore id suscipit amet iusto praesentium quia soluta magni ipsum explicabo reprehenderit ex cumque voluptatibus.</p>
+            </div>
         </div>
+        
         <div class="booking-dropdown">Make Booking</div>
+    </div>
+
+    <h2 class="rooms-title">Available Rooms</h2>
+    <div class="rooms">
+        <div class="room-item">
+            <img src="{{ url_for('static', filename='images/room1.jpg') }}" alt="Room 1" class="room-image">
+            <div class="room-details">
+                <h3 class="room-title">Deluxe Room</h3>
+                <p class="room-desc">A luxurious room with a beautiful view and modern amenities.</p>
+                <p class="room-price">$120 per night</p>
+            </div>
+        </div>
+        <div class="room-item">
+            <img src="{{ url_for('static', filename='images/room2.jpg') }}" alt="Room 2" class="room-image">
+            <div class="room-details">
+                <h3 class="room-title">Suite Room</h3>
+                <p class="room-desc">A spacious suite with premium features and a private balcony.</p>
+                <p class="room-price">$200 per night</p>
+            </div>
+        </div>
     </div>
 
 </body>

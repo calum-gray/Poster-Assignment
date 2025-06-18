@@ -72,13 +72,14 @@ a:hover {
 .dropdown {
     position: relative;
     display: inline-block;
+    color: #F0C327;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
     right: 0;
-    background-color: #189b4d;
+    background-color: #F0C327;
     color: white;
     border-radius: 10px;
     min-width: 160px;
@@ -94,7 +95,7 @@ a:hover {
     display: block;
 }
 
-.dropdown-content a:hover {background-color: #189b4d;}
+.dropdown-content a:hover {background-color: #F0C327;}
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -149,16 +150,96 @@ a:hover {
 			  padding: 0;
 			}
 
-.booking-desc {
+.booking {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px 20px 5px 20px;
+    margin-bottom: 10px;
+    border-bottom: black 1px solid;
+}
+
+.booking-content {
     display: flex;
-    width: 50%;
+    flex-direction: column; 
+    gap: 10px; 
+    width: 70%; 
 }
 
 .booking-title {
-    margin-left: 35px;
+    margin: 0 0 0 50px;
+}
+
+.booking-desc {
+    margin: 0;
 }
 
 .booking-dropdown {
-    float: right;
-    margin: 10px;
+    margin: 0; 
+    padding: 10px 20px; 
+    color: #F0C327;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+.rooms-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 0 50px;
+    color: #F0C327;
+}
+
+.rooms {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 55%;
+    margin: 20px 0 20px 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.room-item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.room-image {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.room-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.room-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.room-desc {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+.room-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+    margin: 0;
 }

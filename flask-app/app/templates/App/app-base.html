@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Flask App{% endblock %}</title>
+    <title>{{title}}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1>Caldecotte Park App</h1>
-        <nav>
-            <ul>
-            </ul>
+        <nav class="menu">
+            <div class="dropdown" style="float:right;">
+                <div class="menu-item"><i class='bx bx-user bx-md' style='color:#189b4d' ></i></div>
+                <div class="dropdown-content">
+                    <a href="#">Home</a>
+                    <a href="/booking">Book a Room</a>
+                    <a href="#">Basket</a>
+                    <a href="#">What's On</a>
+                    <a href="#">Gallery</a>
+                    <a href="#">Account</a>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        {% block content %}
-        {% endblock %}
+        {% block main %} {% endblock %}
     </main>
 
     <footer>

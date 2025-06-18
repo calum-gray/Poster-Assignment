@@ -8,7 +8,8 @@ def index():
 
 @main.route('/booking')
 def home():
-    return render_template('/App/Booking/booking.html')
+    title = 'Book a Room'
+    return render_template('/App/Booking/booking.html', title=title)
 
 @main.route('/rooms')
 def recomendations():

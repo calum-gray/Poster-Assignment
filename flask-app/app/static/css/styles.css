@@ -1,19 +1,20 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-}
+/*body {*/
+/*    font-family: Arial, sans-serif;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    background-color: #f8f9fa;*/
+/*}*/
 
-header {
-    background-color: #343a40;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
+/*header {*/
+/*    background-color: #343a40;*/
+/*    color: white;*/
+/*    padding: 10px 0;*/
+/*    text-align: center;*/
+/*}*/
 
 footer {
-    background-color: #343a40;
+      background: linear-gradient(90deg, rgba(126, 74, 151, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+
     color: white;
     text-align: center;
     padding: 8px 0;
@@ -22,22 +23,22 @@ footer {
     bottom: 0;
 }
 
-.container {
-    padding: 20px;
-}
+/*.container {*/
+/*    padding: 20px;*/
+/*}*/
 
-h1, h2, h3 {
-    color: #343a40;
-}
+/*h1, h2, h3 {*/
+/*    color: #343a40;*/
+/*}*/
 
-a {
-    color: #007bff;
-    text-decoration: none;
-}
+/*a {*/
+/*    color: #007bff;*/
+/*    text-decoration: none;*/
+/*}*/
 
-a:hover {
-    text-decoration: underline;
-}
+/*a:hover {*/
+/*    text-decoration: underline;*/
+/*}*/
 
 .nav {
     display: flex;
@@ -101,54 +102,54 @@ a:hover {
     display: block;
 }
 
-			body {
-			  font-family: poppins-regular, Arial, sans-serif;
-			  height: 100vh;
-			  flex-direction: column;
-			  margin: 0;
-			  padding: 0;
-			  background-image: linear-gradient(to top, #189b4d, #007b6f, #00586c, #1d3548, #1a1a1a);
-			}
+body {
+  font-family: poppins-regular, Arial, sans-serif;
+  height: 100vh;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+    background-color: rgba(126, 74, 151, 56%);
+}
 
-			h1 {
-			    font-size: 36px;
-			    margin: 25px;
-				color: white;
-			  }
+h1 {
+    font-size: 36px;
+    margin: 25px;
+    color: white;
+  }
 
-			p {
-				margin-left: 40px;
-				margin-right: 50px;
-				color: white;
-			}
+p {
+    margin-left: 40px;
+    margin-right: 50px;
+    color: white;
+}
 
 
-			.container {
-				height: 99dvh;
+.container {
+    height: 99dvh;
 
-			}
+}
 
-            /*** HEADER ***/
+/*** HEADER ***/
 
-            .header {
-			  background-color: #1b2329;
-			  color: white;
-			  display: flex;
-			  justify-content: space-between;
-			  align-items: center;
-			  padding: 0.1rem;
-                height: min-content;
-			  position: relative;
-			  border-bottom: rgb(55, 55, 55);
-			  border-bottom-width: 5px;
-			}
+.header {
+  background: linear-gradient(90deg,rgba(237, 221, 83, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(126, 74, 151, 1) 100%);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1rem;
+    height: min-content;
+  position: relative;
+  border-bottom: rgb(55, 55, 55);
+  border-bottom-width: 5px;
+}
 
-            .logo {
-			  width: 3.5rem;
-			  font-size: 2rem;
-			  margin: 0;
-			  padding: 0;
-			}
+.logo {
+    width: 6rem;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
 
 .booking {
     display: flex; 

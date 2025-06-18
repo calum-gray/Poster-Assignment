@@ -13,8 +13,6 @@
 /*}*/
 
 footer {
-      background: linear-gradient(90deg, rgba(126, 74, 151, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
-
     color: white;
     text-align: center;
     padding: 8px 0;
@@ -108,7 +106,7 @@ body {
   flex-direction: column;
   margin: 0;
   padding: 0;
-    background-color: rgba(126, 74, 151, 56%);
+    background: linear-gradient(90deg,rgba(237, 221, 83, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(126, 74, 151, 1) 100%);
 }
 
 h1 {
@@ -132,7 +130,6 @@ p {
 /*** HEADER ***/
 
 .header {
-  background: linear-gradient(90deg,rgba(237, 221, 83, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(126, 74, 151, 1) 100%);
   color: white;
   display: flex;
   justify-content: space-between;
@@ -151,7 +148,7 @@ p {
     padding: 0;
 }
 
-.booking {
+.title-container {
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
@@ -243,4 +240,13 @@ p {
     font-weight: bold;
     color: #007bff;
     margin: 0;
+}
+
+.left{
+    background-color: white;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
 }

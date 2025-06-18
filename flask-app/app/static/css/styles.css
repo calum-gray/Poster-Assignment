@@ -16,7 +16,7 @@ footer {
     background-color: #343a40;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 8px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -111,7 +111,7 @@ a:hover {
 
 			h1 {
 			    font-size: 36px;
-			    margin: 40px;
+			    margin: 25px;
 				color: white;
 			  }
 
@@ -135,7 +135,7 @@ a:hover {
 			  display: flex;
 			  justify-content: space-between;
 			  align-items: center;
-			  padding: 0.5rem;
+			  padding: 0.1rem;
                 height: min-content;
 			  position: relative;
 			  border-bottom: rgb(55, 55, 55);
@@ -148,3 +148,17 @@ a:hover {
 			  margin: 0;
 			  padding: 0;
 			}
+
+.booking-desc {
+    display: flex;
+    width: 50%;
+}
+
+.booking-title {
+    margin-left: 35px;
+}
+
+.booking-dropdown {
+    float: right;
+    margin: 10px;
+}

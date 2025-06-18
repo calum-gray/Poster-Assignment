@@ -4,7 +4,7 @@ main = Blueprint('main', __name__)
 
 @main.route('/')
 def home():
-    return render_template('bookings.html')
+    return render_template('booking.html')
 
 @main.route('/recommendations')
 def recomendations():

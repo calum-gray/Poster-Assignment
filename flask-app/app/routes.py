@@ -3,9 +3,14 @@ from flask import Blueprint, render_template
 main = Blueprint('main', __name__)
 
 @main.route('/')
-def home():
-    return render_template('booking.html')
+def index():
+    return render_template('/App/index.html')
 
-@main.route('/recommendations')
+@main.route('/booking')
+def home():
+    title = 'Book a Room'
+    return render_template('/App/Booking/booking.html', title=title)
+
+@main.route('/rooms')
 def recomendations():
-    return render_template('recomendations.html')
+    return render_template('/App/Rooms/recomendations.html')

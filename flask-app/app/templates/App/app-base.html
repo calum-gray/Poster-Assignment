@@ -3,21 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Flask App{% endblock %}</title>
+    <title>{{title}}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header>
-        <h1>Caldecotte Park App</h1>
-        <nav>
-            <ul>
-            </ul>
+    <header class="header">
+        <img onclick="location.href='/'" class="logo" src="/static/images/logo.png" />
+        <h1 class="page-header">Caldecotte Park Hotel</h1>
+        <nav class="menu">
+            <div class="dropdown" style="float:right;">
+                <div class="menu-item"><i class='bx bx-menu-alt-right bx-lg' style='color:#F0C327' ></i></div>
+                <div class="dropdown-content">
+                    <a href="#">Home</a>
+                    <a href="/booking">Book a Room</a>
+                    <a href="#">Basket</a>
+                    <a href="#">What's On</a>
+                    <a href="#">Gallery</a>
+                    <a href="#">Account</a>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        {% block content %}
-        {% endblock %}
+        {% block main %} {% endblock %}
     </main>
 
     <footer>

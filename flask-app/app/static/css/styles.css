@@ -67,29 +67,255 @@ header {
 }
 
 footer {
-    background-color: #343a40;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+/*.container {*/
+/*    padding: 20px;*/
+/*}*/
+
+/*h1, h2, h3 {*/
+/*    color: #343a40;*/
+/*}*/
+
+/*a {*/
+/*    color: #007bff;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*a:hover {*/
+/*    text-decoration: underline;*/
+/*}*/
+
+.nav {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+}
+
+.menu-item {
+    display: flex;
+    user-select: none;
+    -moz-user-select: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+      }
+
+.menu-item:hover {
+    background-color: rgb(55, 68, 86);
+}
+
+.menu-item.active {
+    background-color: rgb(55, 68, 86);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color: #F0C327;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #F0C327;
+    color: white;
+    border-radius: 10px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    border-bottom: #1a1a1a;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #F0C327;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+body {
+  font-family: poppins-regular, Arial, sans-serif;
+  height: 100vh;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+    background: linear-gradient(90deg,rgba(237, 221, 83, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(126, 74, 151, 1) 100%);
+}
+
+h1 {
+    font-size: 36px;
+    margin: 25px;
+    color: black;
+  }
+
+p {
+    margin-left: 10px;
+    color: black;
+}
+
+.page-header {
+    color: white;
 }
 
 .container {
+    height: 99dvh;
+
+}
+
+/*** HEADER ***/
+
+.header {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1rem;
+    height: min-content;
+  position: relative;
+  border-bottom: rgb(55, 55, 55);
+  border-bottom-width: 5px;
+}
+
+.logo {
+    width: 6rem;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.title-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px 20px 5px 20px;
+    margin-bottom: 10px;
+    border-bottom: black 1px solid;
+}
+
+.booking-content {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    width: 70%; 
+}
+
+.booking-title {
+    margin: 0 0 0 10px;
+}
+
+.booking-desc {
+    margin: 0;
+}
+
+.booking-dropdown {
+    margin: 0; 
+    padding: 10px 20px; 
+    color: #F0C327;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+.rooms-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 0 50px;
+    color: #F0C327;
+}
+
+.rooms {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
     padding: 20px;
+    border-radius: 10px;
 }
 
-h1, h2, h3 {
-    color: #343a40;
+.room-item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-a {
+.room-image {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.room-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.room-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.room-desc {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+.room-price {
+    font-size: 16px;
+    font-weight: bold;
     color: #007bff;
-    text-decoration: none;
+    margin: 0;
 }
 
-a:hover {
-    text-decoration: underline;
+.left{
+    background-color: white;
+    height: 41rem;
+    border-radius: 10px;
 }
 
+.right {
+    width: 55%;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#highlighted {
+    background-color: #F0C327;
+}

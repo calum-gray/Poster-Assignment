@@ -15,10 +15,15 @@
 footer {
     color: white;
     text-align: center;
-    padding: 8px 0;
+    padding: 5px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 /*.container {*/
@@ -106,21 +111,24 @@ body {
   flex-direction: column;
   margin: 0;
   padding: 0;
+
     background: linear-gradient(90deg,rgba(237, 221, 83, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(126, 74, 151, 1) 100%);
 }
 
 h1 {
     font-size: 36px;
     margin: 25px;
-    color: white;
+    color: black;
   }
 
 p {
-    margin-left: 40px;
-    margin-right: 50px;
-    color: white;
+    margin-left: 10px;
+    color: black;
 }
 
+.page-header {
+    color: white;
+}
 
 .container {
     height: 99dvh;
@@ -165,7 +173,7 @@ p {
 }
 
 .booking-title {
-    margin: 0 0 0 50px;
+    margin: 0 0 0 10px;
 }
 
 .booking-desc {
@@ -191,12 +199,9 @@ p {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 55%;
-    margin: 20px 0 20px 40px;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .room-item {
@@ -244,6 +249,11 @@ p {
 
 .left{
     background-color: white;
+    height: 41rem;
+}
+
+.right {
+    width: 55%;
 }
 
 .main-container {

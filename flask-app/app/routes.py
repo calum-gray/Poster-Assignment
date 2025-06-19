@@ -10,4 +10,4 @@ def home():
 @main.route('/account/manage')
 def account():
     title = 'Manage Account'
-    return render_template('/App/Rooms/account.html', title=title)
+    return render_template('/App/Account/account.html', title=title)

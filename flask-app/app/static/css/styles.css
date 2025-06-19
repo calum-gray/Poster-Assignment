@@ -250,6 +250,7 @@ p {
 .left{
     background-color: white;
     height: 41rem;
+    border-radius: 10px;
 }
 
 .right {
@@ -259,4 +260,8 @@ p {
 .main-container {
     display: flex;
     flex-direction: row;
+}
+
+#highlighted {
+    background-color: #F0C327;
 }

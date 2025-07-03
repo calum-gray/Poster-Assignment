@@ -40,6 +40,58 @@
         </div>
         <div class="right">
             <h1 class="page-header">Your Room</h1>
+
+            <div class="room-details-container">
+                <h2 class="right-header">Deluxe Room</h2>
+                <div class="checkin-container">
+                    <div class="checkin-item">
+                        <label class="checkin-label">Check-in Date:</label>
+                        <select class="checkin-dropdown">
+                            <option value="" disabled selected>Select a date</option>
+                            <option value="2023-06-01">July 1, 2025</option>
+                        </select>
+                    </div>
+                    <div class="checkin-item">
+                        <label class="checkin-label">Check-out Date:</label>
+                        <select class="checkin-dropdown">
+                            <option value="" disabled selected>Select a date</option>
+                            <option value="2023-06-04">July 4, 2025</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="checkbox-container">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="breakfast" name="breakfast">
+                        <label for="breakfast">Include Breakfast  <span class="checkbox-price">- £36</span> </label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="parking" name="parking">
+                        <label for="parking">Include Parking  <span class="checkbox-price">- £25</span> </label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="wifi" name="wifi">
+                        <label for="wifi">Include Wi-Fi <span class="checkbox-price">- £10</span></label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="gym" name="gym">
+                        <label for="gym">Include Gym Access <span class="checkbox-price">- £15</span></label>
+                    </div>
+                </div>
+
+                <div class="price-breakdown">
+                    <h2 class="price-header">Price Breakdown</h2>
+                    <ul class="price-list">
+                        <li>Room Price: <span class="price-value">£120</span></li>
+                        <li>Breakfast: <span class="price-value">£36</span></li>
+                        <li>Wi-Fi: <span class="price-value">£10</span></li>
+                        <li class="total-price">Total: <span class="price-value">£156</span></li>
+                    </ul>
+                </div>
+
+                <div class="checkout-container">
+                    <label class="checkout-button">Proceed to Checkout</label>
+                </div>
         </div>
     </div>
 </body>
